@@ -7,20 +7,19 @@ import 'package:highlight/languages/dart.dart';
 
 class CodeArea extends StatelessWidget {
   final String code;
-  const CodeArea({super.key, required this.code});
+  final Widget child;
+  const CodeArea({super.key, required this.code, required this.child});
 
   @override
   Widget build(BuildContext context) {
-    CodeController _codeController = CodeController(
-      text: code,
-      language: dart,
-    );
+    CodeController _codeController = CodeController(text: code, language: dart);
     return Container(
-      decoration: BoxDecoration(
-        color: divColor,
-      ),
+      padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(color: divColor),
       child: Column(
         children: [
+          child,
+          SizedBox(height: 20),
           Stack(
             children: [
               Container(

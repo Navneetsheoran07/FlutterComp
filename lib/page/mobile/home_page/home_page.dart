@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_comp/components/button/my_elevated_button.dart';
 import 'package:flutter_masonry_view/flutter_masonry_view.dart';
 import 'package:get/get.dart';
 
@@ -12,9 +13,7 @@ class MobileHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     ButtonController _buttonController = Get.put(ButtonController());
     var cont = [
-      CodeArea(code: _buttonController.code1),
-      CodeArea(code: _buttonController.code1),
-      CodeArea(code: _buttonController.code1),
+      CodeArea(code: _buttonController.elevatedButton,child: MyElevatedButton(),),
     ];
     return Scaffold(
       body: SingleChildScrollView(

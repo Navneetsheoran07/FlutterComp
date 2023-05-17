@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_comp/config/responsive.dart';
-import 'package:flutter_comp/page/mobile/home_page/widgets/home_data.dart';
+import 'package:flutter_comp/page/mobile/home_page/home_page.dart';
 import 'package:flutter_comp/page/web/home_page/widgets/home_data.dart';
 
 class ViewHomePageData extends StatelessWidget {
@@ -9,7 +9,7 @@ class ViewHomePageData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Responsive(
-      mobile: MobileHomePageData(),
+      mobile: MobileHomePage(),
       desktop: WebHomePageData(),
     );
   }
