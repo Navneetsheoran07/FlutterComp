@@ -1,3 +1,4 @@
+import 'package:flutter_comp/view/app_bar.dart';
 import 'package:flutter_comp/view/bottom_navigation.dart';
 import 'package:flutter_comp/view/button_page.dart/button_page.dart';
 import 'package:flutter_comp/view/home_page/home_page_data.dart';
@@ -11,5 +12,6 @@ class SideBarController extends GetxController {
     ViewHomePageData(),
     ViewButtonPage(),
     ViewBottomNvigation(),
+    ViewAppBar(),
   ];
 }
