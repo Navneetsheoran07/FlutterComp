@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_comp/components/conreibutors/contributors.dart';
 import 'package:flutter_comp/components/search/my_search_bar.dart';
 import 'package:flutter_comp/config/colors.dart';
+import 'package:flutter_comp/controller/sidebar_controller.dart';
+import 'package:get/get.dart';
 
 class WebHomePageData extends StatelessWidget {
   const WebHomePageData({super.key});
 
   @override
   Widget build(BuildContext context) {
+    SideBarController sideBarController = Get.put(SideBarController());
     return Scaffold(
         body: SingleChildScrollView(
       child: Column(
@@ -46,6 +49,7 @@ class WebHomePageData extends StatelessWidget {
                         style: Theme.of(context).textTheme.titleSmall),
                     SizedBox(height: 20),
                     InkWell(
+                      onTap: () => sideBarController.index.value = 1,
                       child: Container(
                         decoration: BoxDecoration(
                           color: buttonColor,
@@ -95,9 +99,13 @@ class WebHomePageData extends StatelessWidget {
           SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [Contributors()],
+            children: [
+              Contributors(),
+              SizedBox(width: 10),
+              Contributors(),
+            ],
           ),
-          SizedBox(height: 40),
+          // SizedBox(height: 40),
         ],
       ),
     ));

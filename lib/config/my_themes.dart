@@ -30,5 +30,11 @@ var lightTheme = ThemeData(
       fontSize: 15,
       fontWeight: FontWeight.w400,
     ),
+    labelSmall: TextStyle(
+      fontFamily: "Rubik",
+      fontSize: 12,
+      color: subTitleColor,
+      fontWeight: FontWeight.w400,
+    ),
   ),
 );

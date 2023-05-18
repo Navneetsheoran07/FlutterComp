@@ -12,7 +12,11 @@ class Contributors extends StatelessWidget {
           width: 100,
           height: 100,
           decoration: BoxDecoration(
-            color: grayColor,
+            image: const DecorationImage(
+              image: AssetImage("assets/images/nitish.png"),
+              fit: BoxFit.cover,
+            ),
+            // color: grayColor,
             borderRadius: BorderRadius.circular(50),
           ),
         ),
