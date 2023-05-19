@@ -5,8 +5,8 @@ import 'package:flutter_masonry_view/flutter_masonry_view.dart';
 
 import '../../../data/bottom_navigation_data.dart';
 
-class MobileAppBar  extends StatelessWidget {
-  const MobileAppBar ({super.key});
+class MobileAppBar extends StatelessWidget {
+  const MobileAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class MobileAppBar  extends StatelessWidget {
         child: MasonryView(
           listOfItem: appBarList,
           itemBuilder: (item) => item,
-          numberOfColumn: 2,
+          numberOfColumn: 1,
           itemPadding: 4,
           itemRadius: 10,
         ),

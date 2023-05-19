@@ -2,6 +2,7 @@ import 'package:code_text_field/code_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_comp/config/colors.dart';
+import 'package:get/get.dart';
 // import 'package:highlight/highlight_core.dart' show highlight;
 import 'package:highlight/languages/dart.dart';
 
@@ -36,8 +37,11 @@ class CodeArea extends StatelessWidget {
                 top: 4,
                 right: 4,
                 child: InkWell(
-                  onTap: () {
-                    Clipboard.setData(ClipboardData(text: code));
+                  onTap: () => {
+                    Clipboard.setData(ClipboardData(text: code)),
+                    Get.showSnackbar(const GetSnackBar(
+                      message: "Copied to clipboard",
+                    )),
                   },
                   child: Container(
                     padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),

@@ -41,7 +41,7 @@ Drawer MyDrawer() => Drawer(
                 children: [
                   ListTile(
                     splashColor: Color(0xffDCE5FF),
-                    leading: Icon(Icons.home),
+                    leading: Icon(Icons.house),
                     title: Text('Home'),
                     hoverColor: bgColor,
                     onTap: () => sideBarController.index.value = 0,
