@@ -1,7 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
-import '../components/button/my_elevated_button.dart';
+import '../components/bottom_navigation/simple_bottomnavigation.dart';
+
 import '../components/code_area.dart';
 import '../controller/bottom_navigation.dart';
 
@@ -10,7 +11,14 @@ BottonNavigationController bottomNavigationController =
 
 var bottomNavigationList = [
   CodeArea(
-    code: bottomNavigationController.demoCode,
-    child: MyElevatedButton(),
+    code: bottomNavigationController.SimpleNavigationController,
+    codeTitle: "GetX Controller",
+    code1: bottomNavigationController.simpleBottonNavigation,
+    codeTitle1: "Botton Navigation Code",
+    child: SizedBox(
+      height: 500,
+      width: 300,
+      child: SimpleNavigationBar(),
+    ),
   ),
 ];

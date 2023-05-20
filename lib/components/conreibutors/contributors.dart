@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_comp/config/colors.dart';
 
 class Contributors extends StatelessWidget {
   const Contributors({super.key});
@@ -20,7 +19,7 @@ class Contributors extends StatelessWidget {
             borderRadius: BorderRadius.circular(50),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Row(

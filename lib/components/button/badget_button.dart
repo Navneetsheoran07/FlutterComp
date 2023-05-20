@@ -11,26 +11,26 @@ class BudgetButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Badge(
-              label: Text("02"),
+              label:const Text("02"),
               backgroundColor: Colors.deepPurple,
               largeSize: 20,
-              textStyle: TextStyle(fontSize: 15),
+              textStyle:const TextStyle(fontSize: 15),
               child: IconButton(
                 color: Colors.blue,
                 onPressed: () {},
-                icon: Icon(
+                icon:const Icon(
                   Icons.home,
                   size: 50,
                 ),
               ),
             ),
             Badge(
-              label: Text("02"),
+              label:const Text("02"),
               backgroundColor: Colors.deepPurple,
               largeSize: 20,
-              textStyle: TextStyle(fontSize: 15),
+              textStyle:const TextStyle(fontSize: 15),
               child: ElevatedButton(
-                child: Text("My Button"),
+                child:const Text("My Button"),
                 onPressed: () {},
               ),
             ),
@@ -39,7 +39,7 @@ class BudgetButton extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Badge(
+          const  Badge(
               label: Text("02"),
               alignment: AlignmentDirectional.topEnd,
               backgroundColor: Colors.deepPurple,
@@ -50,10 +50,10 @@ class BudgetButton extends StatelessWidget {
               ),
             ),
             Badge(
-                label: Text("02"),
+                label:const Text("02"),
                 backgroundColor: Colors.deepPurple,
                 largeSize: 20,
-                textStyle: TextStyle(fontSize: 15),
+                textStyle:const TextStyle(fontSize: 15),
                 child: InkWell(
                   onTap: () {},
                   child: Container(
@@ -61,8 +61,8 @@ class BudgetButton extends StatelessWidget {
                       color: Colors.deepPurple.shade100,
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    padding: EdgeInsets.all(20),
-                    child: Row(
+                    padding:const EdgeInsets.all(20),
+                    child:const Row(
                       children: [Icon(Icons.add), Text("Add New Button")],
                     ),
                   ),
@@ -71,6 +71,5 @@ class BudgetButton extends StatelessWidget {
         ),
       ],
     );
-    ;
   }
 }

@@ -1,12 +1,9 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_comp/config/colors.dart';
+import 'package:flutter_comp/controller/bottom_navigation/simple_botton_controller.dart';
 import 'package:get/get.dart';
 
-class BottonNavigationController extends GetxController {
-  late String demoCode = ''' ElevatedButton(
-                    onPressed: () {},
-                    child: const Text("Elevated Button"),
-  ),''';
-  late String simpleBottonNavigation =
-      ''' class SimpleNavigationBar extends StatelessWidget {
+class SimpleNavigationBar extends StatelessWidget {
   const SimpleNavigationBar({super.key});
 
   @override
@@ -37,18 +34,4 @@ class BottonNavigationController extends GetxController {
       ),
     );
   }
-}
-''';
-
-  late String SimpleNavigationController = '''class SimpleNavigationController extends GetxController {
-  RxInt index = 0.obs;
-
-  var Pages = [
-    DemoHomePage(),
-    DemoAboutPage(),
-    DemoContactPage(),
-    DemoHomePage(),
-  ];
-}
-''';
 }

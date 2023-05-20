@@ -46,16 +46,18 @@ class MobileHomePageData extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
+                             const Icon(
                                 Icons.explore,
                                 color: Colors.white,
                               ),
                               SizedBox(width: 10),
-                              Text("Explore Now",
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .titleSmall
-                                      ?.copyWith(color: Colors.white))
+                              Text(
+                                "Explore Now",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .titleSmall
+                                    ?.copyWith(color: Colors.white),
+                              )
                             ],
                           ),
                         ),
