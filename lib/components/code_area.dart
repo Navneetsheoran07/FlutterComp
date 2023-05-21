@@ -79,11 +79,21 @@ class CodeArea extends StatelessWidget {
                 top: 4,
                 right: 4,
                 child: InkWell(
-                  onTap: () => {
-                    Clipboard.setData(ClipboardData(text: code)),
-                    Get.showSnackbar(const GetSnackBar(
-                      message: "Copied to clipboard",
-                    )),
+                  onTap: () {
+                    Clipboard.setData(ClipboardData(text: code));
+                    Get.showSnackbar(
+                      const GetSnackBar(
+                        barBlur: 12,
+                        backgroundColor: grayColor,
+                        icon: Icon(
+                          Icons.copy,
+                          color: whiteColor,
+                        ),
+                        duration: Duration(seconds: 1),
+                        dismissDirection: DismissDirection.down,
+                        message: "Copied to clipboard",
+                      ),
+                    );
                   },
                   child: Container(
                     padding:
