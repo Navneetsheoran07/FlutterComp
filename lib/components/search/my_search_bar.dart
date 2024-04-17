@@ -10,9 +10,9 @@ class MySearchBar extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         hintText: "Search",
-        fillColor: whiteColor,
+        fillColor: Theme.of(context).colorScheme.primaryContainer,
         hintStyle: TextStyle(
-          color: titleColor,
+          color: Theme.of(context).colorScheme.onBackground,
           fontSize: 15,
         ),
         filled: true,
@@ -27,13 +27,13 @@ class MySearchBar extends StatelessWidget {
           child: Container(
               padding: EdgeInsets.all(10),
               margin: EdgeInsets.only(right: 5),
-              decoration: const BoxDecoration(
-                color: buttonColor,
+              decoration:  BoxDecoration(
+                color: Theme.of(context).colorScheme.primaryContainer,
                 borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
               child: Icon(
                 Icons.search,
-                color: whiteColor,
+                color: Theme.of(context).colorScheme.primaryContainer,
               )),
         ),
       ),

@@ -8,14 +8,14 @@ class AppBarController extends GetxController {
             onPressed: () {},
             icon: Icon(
               Icons.search,
-              color: whiteColor,
+              color: Theme.of(context).colorScheme.primaryContainer,
             ),
           ),
           IconButton(
             onPressed: () {},
             icon: Icon(
               Icons.notifications_rounded,
-              color: whiteColor,
+              color: Theme.of(context).colorScheme.primaryContainer,
             ),
           ),
         ],
@@ -23,13 +23,13 @@ class AppBarController extends GetxController {
             onPressed: () {},
             icon: Icon(
               Icons.format_align_left_sharp,
-              color: whiteColor,
+              color: Theme.of(context).colorScheme.primaryContainer,
             )),
         backgroundColor: blueColor,
         title: Text(
           "A P P B A R",
           style: TextStyle(
-            color: whiteColor,
+            color: Theme.of(context).colorScheme.primaryContainer,
           ),
         ),
       ),
@@ -51,13 +51,13 @@ class _TabAppBarState extends State<TabAppBar> with TickerProviderStateMixin {
     TabController tabController = TabController(length: 4, vsync: this);
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: buttonColor,
+          backgroundColor: Theme.of(context).colorScheme.primaryContainer,
           title: Text("TAB APP BAR"),
           bottom: TabBar(
             labelColor: Colors.white,
             unselectedLabelColor: Colors.grey,
-            indicatorColor: whiteColor,
-            dividerColor: bgColor,
+            indicatorColor: Theme.of(context).colorScheme.primaryContainer,
+            dividerColor: Theme.of(context).colorScheme.background,
             controller: tabController,
             tabs: const [
               Tab(
@@ -106,18 +106,18 @@ class _WhatsappAppBarState extends State<WhatsappAppBar>
     TabController tabController = TabController(length: 3, vsync: this);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: bgColor,
+        backgroundColor: Theme.of(context).colorScheme.background,
         title:const Text(
           "WhatsApp",
-          style: TextStyle(color: titleColor),
+          style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
         ),
         centerTitle: false,
         bottom: TabBar(
-            labelColor: subTitleColor,
+            labelColor: Theme.of(context).colorScheme.onSecondaryContainer,
             indicatorWeight: 2,
             indicatorSize: TabBarIndicatorSize.tab,
-            indicatorColor: buttonColor,
-            unselectedLabelColor: grayColor,
+            indicatorColor: Theme.of(context).colorScheme.primaryContainer,
+            unselectedLabelColor: Theme.of(context).colorScheme.onSecondaryContainer,
             controller: tabController,
             tabs:const [
               Tab(

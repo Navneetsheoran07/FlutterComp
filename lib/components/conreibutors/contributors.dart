@@ -15,7 +15,7 @@ class Contributors extends StatelessWidget {
               image: AssetImage("assets/images/nitish.png"),
               fit: BoxFit.cover,
             ),
-            // color: grayColor,
+            // color: Theme.of(context).colorScheme.onSecondaryContainer,
             borderRadius: BorderRadius.circular(50),
           ),
         ),

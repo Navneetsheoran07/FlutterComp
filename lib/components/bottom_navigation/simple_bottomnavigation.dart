@@ -13,8 +13,8 @@ class SimpleNavigationBar extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: Obx(
         () => BottomNavigationBar(
-          selectedItemColor: titleColor,
-          unselectedItemColor: grayColor,
+          selectedItemColor: Theme.of(context).colorScheme.onBackground,
+          unselectedItemColor: Theme.of(context).colorScheme.onSecondaryContainer,
           backgroundColor: Colors.white,
           currentIndex: simpleNavigationController.index.value,
           onTap: (index) {

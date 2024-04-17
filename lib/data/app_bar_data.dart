@@ -11,6 +11,7 @@ AppBarController appBarController = Get.put(AppBarController());
 var appBarList = [
   CodeArea(
     code: appBarController.simpleAppBar,
+    isBorder: true,
     child: SizedBox(
       height: 500,
       width: 300,
@@ -19,6 +20,7 @@ var appBarList = [
   ),
   CodeArea(
     code: appBarController.tabAppBar,
+    isBorder: true,
     child: SizedBox(
       height: 500,
       width: 300,
@@ -27,6 +29,7 @@ var appBarList = [
   ),
   CodeArea(
     code: appBarController.whatsappAppbar,
+    isBorder: true,
     child: SizedBox(
       height: 500,
       width: 300,

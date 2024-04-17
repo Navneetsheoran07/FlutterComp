@@ -14,7 +14,7 @@ class WebHomePage extends StatelessWidget {
       children: [
         Expanded(
           flex: 2,
-          child: MyDrawer(),
+          child: MyDrawer(context),
         ),
         Obx(
           () => Expanded(

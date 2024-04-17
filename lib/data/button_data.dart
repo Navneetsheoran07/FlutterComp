@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_comp/code/ToastMessageCodes.dart';
+import 'package:flutter_comp/components/button/ToastMessageButton.dart';
 import 'package:flutter_comp/components/button/custome_button.dart';
 import 'package:flutter_comp/components/button/icon_button.dart';
 import 'package:flutter_comp/components/button/notification_button.dart';
@@ -35,5 +37,10 @@ var buttonList = [
   CodeArea(
     code: _buttonController.customeButton,
     child: CustomeButton(),
+  ),
+  CodeArea(
+    codeTitle: "Toast Message",
+    code: ToastMessageCodes.ToastMessageCode,
+    child: ToastMessageButton(),
   ),
 ];

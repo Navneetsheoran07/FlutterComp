@@ -13,9 +13,10 @@ class NotificationButton extends StatelessWidget {
           width: 50,
           height: 50,
           decoration: ShapeDecoration(
-            color: buttonColor,
+            color: Theme.of(context).colorScheme.primaryContainer,
             shape: CircleBorder(
-              side: BorderSide(color: buttonColor),
+              side: BorderSide(
+                  color: Theme.of(context).colorScheme.primaryContainer),
             ),
           ),
           child: IconButton(

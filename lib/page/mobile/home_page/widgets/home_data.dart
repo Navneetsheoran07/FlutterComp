@@ -38,7 +38,8 @@ class MobileHomePageData extends StatelessWidget {
                         onTap: () => sideBarController.index.value = 1,
                         child: Container(
                           decoration: BoxDecoration(
-                            color: buttonColor,
+                            color:
+                                Theme.of(context).colorScheme.primaryContainer,
                             borderRadius: BorderRadius.circular(10),
                           ),
                           width: 200,
@@ -46,7 +47,7 @@ class MobileHomePageData extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                             const Icon(
+                              const Icon(
                                 Icons.explore,
                                 color: Colors.white,
                               ),

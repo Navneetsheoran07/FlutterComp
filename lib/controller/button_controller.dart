@@ -85,9 +85,9 @@ class ButtonController extends GetxController {
           width: 50,
           height: 50,
           decoration: ShapeDecoration(
-            color: buttonColor,
+            color: Theme.of(context).colorScheme.primaryContainer,
             shape: CircleBorder(
-              side: BorderSide(color: buttonColor),
+              side: BorderSide(color: Theme.of(context).colorScheme.primaryContainer),
             ),
           ),
           child: IconButton(
@@ -128,7 +128,7 @@ class ButtonController extends GetxController {
       child: Container(
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: buttonColor,
+          color: Theme.of(context).colorScheme.primaryContainer,
           borderRadius: BorderRadius.circular(20),
         ),
         child: Row(

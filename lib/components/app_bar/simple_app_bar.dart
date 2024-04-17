@@ -14,14 +14,14 @@ class SimpleAppBar extends StatelessWidget {
             onPressed: () {},
             icon: Icon(
               Icons.search,
-              color: whiteColor,
+              color: Theme.of(context).colorScheme.primaryContainer,
             ),
           ),
           IconButton(
             onPressed: () {},
             icon: Icon(
               Icons.notifications_rounded,
-              color: whiteColor,
+              color: Theme.of(context).colorScheme.primaryContainer,
             ),
           ),
         ],
@@ -29,13 +29,13 @@ class SimpleAppBar extends StatelessWidget {
             onPressed: () {},
             icon: Icon(
               Icons.format_align_left_sharp,
-              color: whiteColor,
+              color: Theme.of(context).colorScheme.primaryContainer,
             )),
-        backgroundColor: buttonColor,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         title: Text(
           "A P P B A R",
           style: TextStyle(
-            color: whiteColor,
+            color: Theme.of(context).colorScheme.primaryContainer,
           ),
         ),
       ),

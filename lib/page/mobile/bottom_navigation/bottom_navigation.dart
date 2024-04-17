@@ -16,7 +16,7 @@ class MobileBottomNavigation extends StatelessWidget {
         child: MasonryView(
           listOfItem: bottomNavigationList,
           itemBuilder: (item) => item,
-          numberOfColumn: 2,
+          numberOfColumn: 1,
           itemPadding: 4,
           itemRadius: 10,
         ),

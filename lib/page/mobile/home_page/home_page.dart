@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_comp/config/colors.dart';
 import 'package:get/get.dart';
 import '../../../components/my_drawer.dart';
 import '../../../controller/sidebar_controller.dart';
@@ -18,14 +17,14 @@ class MobileHomePage extends StatelessWidget {
             icon: Icon(Icons.search),
           )
         ],
-        backgroundColor: divColor,
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
         centerTitle: true,
         title: Image.asset(
           "assets/images/flutter_logo.png",
           width: 130,
         ),
       ),
-      drawer: MyDrawer(),
+      drawer: MyDrawer(context),
       body: Obx(
         () => sideBarController.pages[sideBarController.index.value],
       ),

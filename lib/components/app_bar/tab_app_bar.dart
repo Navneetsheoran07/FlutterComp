@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_comp/config/colors.dart';
 import 'package:flutter_comp/page/demo_pages/about_page.dart';
 import 'package:flutter_comp/page/demo_pages/contact_page.dart';
 import 'package:flutter_comp/page/demo_pages/home_page.dart';
@@ -17,17 +16,18 @@ class _TabAppBarState extends State<TabAppBar> with TickerProviderStateMixin {
     TabController tabController = TabController(length: 4, vsync: this);
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: buttonColor,
+          backgroundColor: Theme.of(context).colorScheme.primary,
           title: Text(
             "TAB APP BAR",
-            style: TextStyle(color: whiteColor),
+            style: TextStyle(
+                color: Theme.of(context).colorScheme.primaryContainer),
           ),
           centerTitle: true,
           bottom: TabBar(
             labelColor: Colors.white,
             unselectedLabelColor: Colors.grey[400],
-            indicatorColor: whiteColor,
-            dividerColor: bgColor,
+            indicatorColor: Theme.of(context).colorScheme.primaryContainer,
+            dividerColor: Theme.of(context).colorScheme.background,
             controller: tabController,
             tabs: const [
               Tab(

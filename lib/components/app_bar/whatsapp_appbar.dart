@@ -15,20 +15,21 @@ class _WhatsappAppBarState extends State<WhatsappAppBar>
     TabController tabController = TabController(length: 3, vsync: this);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: bgColor,
-        title:const Text(
+        backgroundColor: Theme.of(context).colorScheme.background,
+        title: Text(
           "WhatsApp",
-          style: TextStyle(color: titleColor),
+          style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
         ),
         centerTitle: false,
         bottom: TabBar(
-            labelColor: subTitleColor,
+            labelColor: Theme.of(context).colorScheme.onSecondaryContainer,
             indicatorWeight: 2,
             indicatorSize: TabBarIndicatorSize.tab,
-            indicatorColor: buttonColor,
-            unselectedLabelColor: grayColor,
+            indicatorColor: Theme.of(context).colorScheme.primaryContainer,
+            unselectedLabelColor:
+                Theme.of(context).colorScheme.onSecondaryContainer,
             controller: tabController,
-            tabs:const [
+            tabs: const [
               Tab(
                 text: "Chats",
               ),

@@ -18,8 +18,8 @@ class WebHomePageData extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(6),
             height: 70,
-            decoration: const BoxDecoration(
-              color: divColor,
+            decoration:  BoxDecoration(
+              color: Theme.of(context).colorScheme.primaryContainer,
             ),
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -52,7 +52,7 @@ class WebHomePageData extends StatelessWidget {
                       onTap: () => sideBarController.index.value = 1,
                       child: Container(
                         decoration: BoxDecoration(
-                          color: buttonColor,
+                          color: Theme.of(context).colorScheme.primaryContainer,
                           borderRadius: BorderRadius.circular(10),
                         ),
                         width: 200,
@@ -86,7 +86,7 @@ class WebHomePageData extends StatelessWidget {
           SizedBox(height: 40),
           Divider(
             thickness: 2,
-            color: divColor,
+            color: Theme.of(context).colorScheme.primaryContainer,
           ),
           SizedBox(height: 20),
           Row(
