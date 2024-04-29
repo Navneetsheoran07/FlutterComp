@@ -40,6 +40,7 @@ dependencies:
   highlight: ^0.7.0
   navigation_view: ^1.0.6
   fluttertoast: ^8.2.5
+  coupon_uikit: ^0.2.1
 
 dev_dependencies:
   flutter_test:
