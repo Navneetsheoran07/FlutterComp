@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Comp',
       builder: FToastBuilder(),
       theme: lightTheme,
-      home: ViewHomePage(),
+      home: const ViewHomePage(),
     );
   }
 }

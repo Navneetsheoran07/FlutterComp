@@ -9,9 +9,9 @@ class SideBarController extends GetxController {
   RxInt index = 2.obs;
 
   var pages = [
-    ViewHomePageData(),
-    ViewButtonPage(),
-    ViewBottomNvigation(),
-    ViewAppBar(),
+    const ViewHomePageData(),
+    const ViewButtonPage(),
+    const ViewBottomNvigation(),
+    const ViewAppBar(),
   ];
 }
