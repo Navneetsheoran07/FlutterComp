@@ -13,16 +13,16 @@ class NavigationView2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var pages = [
-      DemoHomePage(),
-      DemoAboutPage(),
-      DemoContactPage(),
-      DemoPrivacyPage(),
+      const DemoHomePage(),
+      const DemoAboutPage(),
+      const DemoContactPage(),
+      const DemoPrivacyPage(),
     ];
     RxInt currentIndex = 0.obs;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("NAVIGATION VIEW 1"),
+        title: const Text("NAVIGATION VIEW 1"),
       ),
       bottomNavigationBar: NavigationView(
         items: [

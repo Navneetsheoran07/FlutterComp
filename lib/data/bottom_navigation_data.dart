@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_comp/components/bottom_navigation/NavigationView1.dart';
-import 'package:get/get.dart';
 
 import '../components/bottom_navigation/NavigationView2.dart';
 import '../components/bottom_navigation/simple_bottomnavigation.dart';

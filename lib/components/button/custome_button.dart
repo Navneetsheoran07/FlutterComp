@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_comp/config/colors.dart';
 
 class CustomeButton extends StatelessWidget {
   const CustomeButton({super.key});
@@ -11,12 +10,12 @@ class CustomeButton extends StatelessWidget {
       child: InkWell(
         onTap: () {},
         child: Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             color: Theme.of(context).colorScheme.primaryContainer,
             borderRadius: BorderRadius.circular(20),
           ),
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
