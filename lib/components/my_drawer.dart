@@ -80,6 +80,14 @@ Drawer MyDrawer(BuildContext context) => Drawer(
                     onTap: () => sideBarController.index.value = 3,
                     selected: sideBarController.index.value == 3,
                   ),
+                  ListTile(
+                    splashColor: Theme.of(context).colorScheme.primary,
+                    leading: Icon(Icons.input),
+                    title: Text('Input Field'),
+                    hoverColor: Theme.of(context).colorScheme.background,
+                    onTap: () => sideBarController.index.value = 4,
+                    selected: sideBarController.index.value == 4,
+                  ),
                   // Divider(
                   //     color: Theme.of(context).colorScheme.onPrimaryContainer,
                   //     thickness: 0.2),
