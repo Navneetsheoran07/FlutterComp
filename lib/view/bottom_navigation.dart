@@ -8,7 +8,7 @@ class ViewBottomNvigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Responsive(
+    return const Responsive(
         mobile: MobileBottomNavigation(), desktop: WebBottomNavigation());
   }
 }

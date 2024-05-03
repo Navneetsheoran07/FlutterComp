@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../config/colors.dart';
-
 class SimpleAppBar extends StatelessWidget {
   const SimpleAppBar({super.key});
 
@@ -39,7 +37,7 @@ class SimpleAppBar extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
+      body: const Center(
         child: Text("Simple App bar"),
       ),
     );

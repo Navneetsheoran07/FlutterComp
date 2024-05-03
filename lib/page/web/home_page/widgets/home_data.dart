@@ -16,9 +16,9 @@ class WebHomePageData extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            padding: EdgeInsets.all(6),
+            padding: const EdgeInsets.all(6),
             height: 70,
-            decoration:  BoxDecoration(
+            decoration: BoxDecoration(
               color: Theme.of(context).colorScheme.primaryContainer,
             ),
             child: const Row(
@@ -33,11 +33,11 @@ class WebHomePageData extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
+              SizedBox(
                 width: 500,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,7 +47,7 @@ class WebHomePageData extends StatelessWidget {
                     Text(
                         "This is a Flutter Components Website you can you this for creating your own website you can copy the code from here and use it in your website",
                         style: Theme.of(context).textTheme.titleSmall),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     InkWell(
                       onTap: () => sideBarController.index.value = 1,
                       child: Container(
@@ -60,11 +60,11 @@ class WebHomePageData extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.explore,
                               color: Colors.white,
                             ),
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             Text("Explore Now",
                                 style: Theme.of(context)
                                     .textTheme
@@ -83,12 +83,12 @@ class WebHomePageData extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
           Divider(
             thickness: 2,
             color: Theme.of(context).colorScheme.primaryContainer,
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -96,8 +96,8 @@ class WebHomePageData extends StatelessWidget {
                   style: Theme.of(context).textTheme.titleSmall),
             ],
           ),
-          SizedBox(height: 20),
-          Row(
+          const SizedBox(height: 20),
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Contributors(),

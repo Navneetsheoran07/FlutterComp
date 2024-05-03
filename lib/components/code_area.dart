@@ -1,10 +1,7 @@
-import 'dart:js_util';
-
 import 'package:code_text_field/code_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_comp/components/toastMessage/messageFormates/MessageFormate.dart';
-import 'package:flutter_comp/config/colors.dart';
 import 'package:get/get.dart';
 // import 'package:highlight/highlight_core.dart' show highlight;
 import 'package:highlight/languages/dart.dart';
@@ -44,7 +41,7 @@ class CodeArea extends StatelessWidget {
     Color topShadowColor = Colors.white60;
     Color bottomShadowColor = const Color(0x26234395);
     return AnimatedContainer(
-      duration: Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 500),
       padding: const EdgeInsets.all(10),
       decoration:
           BoxDecoration(color: Theme.of(context).colorScheme.primaryContainer),
@@ -66,7 +63,7 @@ class CodeArea extends StatelessWidget {
                         ),
                       ],
                     )
-                  : BoxDecoration(),
+                  : const BoxDecoration(),
               child: child),
           const SizedBox(height: 20),
           Row(
@@ -77,18 +74,19 @@ class CodeArea extends StatelessWidget {
                   isExpanded.value = !isExpanded.value;
                 },
                 child: Container(
-                  padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                   decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primaryContainer,
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.code,
                         color: Colors.grey,
                       ),
-                      SizedBox(width: 5),
+                      const SizedBox(width: 5),
                       Obx(
                         () => Text(
                           isExpanded.value ? "Hide Codes" : "Get Codes",
@@ -114,7 +112,7 @@ class CodeArea extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                                 vertical: 5, horizontal: 15),
                             decoration: BoxDecoration(
                                 color: Theme.of(context)
@@ -123,11 +121,11 @@ class CodeArea extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(100)),
                             child: Row(
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.folder,
                                   color: Colors.amber,
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Text(
                                   codeTitle.toString(),
                                   style: Theme.of(context)
@@ -184,14 +182,14 @@ class CodeArea extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       code1 != ""
                           ? Column(
                               children: [
                                 Row(
                                   children: [
                                     Container(
-                                      padding: EdgeInsets.symmetric(
+                                      padding: const EdgeInsets.symmetric(
                                           vertical: 5, horizontal: 15),
                                       decoration: BoxDecoration(
                                           color: Theme.of(context)
@@ -201,11 +199,11 @@ class CodeArea extends StatelessWidget {
                                               BorderRadius.circular(100)),
                                       child: Row(
                                         children: [
-                                          Icon(
+                                          const Icon(
                                             Icons.folder,
                                             color: Colors.amber,
                                           ),
-                                          SizedBox(width: 5),
+                                          const SizedBox(width: 5),
                                           Text(
                                             codeTitle1.toString(),
                                             style: Theme.of(context)
@@ -269,7 +267,7 @@ class CodeArea extends StatelessWidget {
                                 ),
                               ],
                             )
-                          : SizedBox(
+                          : const SizedBox(
                               height: 0,
                             ),
                       code2 != ""
@@ -278,7 +276,7 @@ class CodeArea extends StatelessWidget {
                                 Row(
                                   children: [
                                     Container(
-                                      padding: EdgeInsets.symmetric(
+                                      padding: const EdgeInsets.symmetric(
                                           vertical: 5, horizontal: 15),
                                       decoration: BoxDecoration(
                                           color: Theme.of(context)
@@ -288,11 +286,11 @@ class CodeArea extends StatelessWidget {
                                               BorderRadius.circular(100)),
                                       child: Row(
                                         children: [
-                                          Icon(
+                                          const Icon(
                                             Icons.folder,
                                             color: Colors.amber,
                                           ),
-                                          SizedBox(width: 5),
+                                          const SizedBox(width: 5),
                                           Text(
                                             codeTitle2.toString(),
                                             style: Theme.of(context)
@@ -356,12 +354,12 @@ class CodeArea extends StatelessWidget {
                                 ),
                               ],
                             )
-                          : SizedBox(
+                          : const SizedBox(
                               height: 0,
                             ),
                     ],
                   )
-                : SizedBox(
+                : const SizedBox(
                     height: 5,
                   ),
           )

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_comp/config/colors.dart';
 
 class WhatsappAppBar extends StatefulWidget {
   const WhatsappAppBar({super.key});
